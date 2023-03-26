@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --linkColor:'#1e87f0';
+    --linkHoverColor:'#0f6ecd';
+    --globalBackground:'#fff';
+}
+body{
+    background-color: var(--globalBackground);
+}
+a{
+    color: var(--linkColor);
+    text-decoration: underline;
+    cursor: pointer;
+}
+a:hover{
+    color: var(--linkHoverColor);
+}
+.link-reset{
+    color:inherit;
+    text-decoration: none;
+}
