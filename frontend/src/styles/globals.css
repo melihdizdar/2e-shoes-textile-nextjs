@@ -3,12 +3,26 @@
 @tailwind utilities;
 
 :root{
+    /*font-family*/
+    --globalFamily: 'Montserrat', sans-serif;
+    /*colors*/
     --linkColor:'#1e87f0';
     --linkHoverColor:'#0f6ecd';
     --globalBackground:'#fff';
+    --emphasisColor:'#333';
+    --globalColor:'#666';
+    /*font sizes*/
+    --globalText: '16px';
+    --textSmall: '14px';
+    --textMedium: '20px';
+    --textLarge : '24px';
+    --textXLarge: '32px';
+    --textXXLarge: '42px';
 }
 body{
     background-color: var(--globalBackground);
+    font-family: var(--globalFamily);
+    font-size: var(--globalText);
 }
 a{
     color: var(--linkColor);
@@ -21,4 +35,29 @@ a:hover{
 .link-reset{
     color:inherit;
     text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--emphasisColor);
+}
+h1{
+    font-size: var(--textXXLarge);
+}
+h2{
+    font-size: var(--textXLarge);
+}
+h3{
+    font-size: var(--textLarge);
+}
+h4{
+    font-size: var(--textMedium);
+}
+h5{
+    font-size: var(--globalText);
+}
+h6{
+    font-size: var(--textSmall);
+}
+p{
+    color: var(--globalColor);
+    font-size: var(--globalText);
 }
